@@ -50,8 +50,8 @@ class config:
     NEWS_URL = "https://sugoi-api.vercel.app/news?keyword={}"
     shayri_api_url = "https://hindi-quotes.vercel.app/random"
     BASE_URL = "https://api.waifu.pics"
-    Movie_Api = "d6b8dd51c4e80b5888e2587d780300fc"
-    Movie_RAC = "AQFy0zIAeTrqXAyN24IN6WCSafrxbO81MFls0ObprFIFNDUixJJjgGITAdkghmp2aiWnhMnY-VbLFph-jaMKIEfsw7shXYiB6-qZOVlV0LKm3Imfd8GZ-AWzmj7O_v1VfcwtM8NeLkeJlGbaix6JpQeP_1ZefphDuxdCzrqzEOmaGeWvPj1cs9sjzYgTyAoehubC5XnbVuRU-7Xu6kmPssSQMYMABAZB35EGu47c-RAvyx43MkLKXzBQGKfU2Lx-YElS1U6jCwBTn4z6LYcct7ZT78CT7G-XK-P3PyLylYcGR0j90lGIzud7mJZm8ZNIHc-5NTlG-mxmK3l0MHjNMgW6bM_a9AAAAAGxDHVkAA"
+    Movie_Api = "5d3274c3bb08b4276482436c8444abc0"
+    Movie_RAC = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZDMyNzRjM2JiMDhiNDI3NjQ4MjQzNmM4NDQ0YWJjMCIsIm5iZiI6MTczMzIyMjgxMy42OTQwMDAyLCJzdWIiOiI2NzRlZTE5ZDJjZTRjZTdkZDYwOTU2YjAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.aXfQw0_CRrKl2iSJd9tFE1TVbWWVYNgysWkUVlwzyRg"
     Pokedex = "https://sugoi-api.vercel.app/pokemon?name={name_or_id}"
     OPENAI_KEY = "xx" #Get From Open Ai's Website
     LYRICS_GENIUS_TOKEN = "x-x" #Get From Genius.com
