@@ -31,10 +31,10 @@ class config:
     DOWNLOAD_LOCATION = "./downloads"
     COMMAND_PREFIXES = ["/" , "!" , "." , "#" , "$" , "%" , "&" , "?"] 
     CMD_STARTERS = "/.!&#%$"
-    STATS_IMG_URL = "https://files.catbox.moe/uoiule.jpg"
-    START_IMG_URL = "https://files.catbox.moe/c50glv.jpg"
-    HELP_IMG_URL = "https://files.catbox.moe/bggrlh.jpg"
-    ALIVE_IMG_URL = "https://files.catbox.moe/f3yuiy.jpg"
+    STATS_IMG_URL = "https://files.catbox.moe/xfo8hk.jpg"
+    START_IMG_URL = "https://files.catbox.moe/xfo8hk.jpg"
+    HELP_IMG_URL = "https://files.catbox.moe/xfo8hk.jpg"
+    ALIVE_IMG_URL = "https://files.catbox.moe/xfo8hk.jpg"
     
     MONGODB_URI = "mongodb+srv://lollolopp0900:slayersan@cluster0.mge1ngz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" 
     DATABASE_NAME = "test"
