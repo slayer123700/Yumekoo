@@ -114,7 +114,7 @@ async def start_cmd(_, message: Message):
 
     # Sticker
    await message.reply_sticker(
-    sticker="CAACAgUAAxkBAAEHy3JkknnFiwdOvF1YJx3KHbISWf3giQACsAIAApkKyFQgjDIHTrX_vzQE"
+    sticker="CAACAgUAAxkBAAJuUGeBadZTdf_CjZY5sg_-DiHVwN6NAAI4FAACMBsIVIcDmYcfk1ruHgQ"
    )
     
     await sleep(0.2)
