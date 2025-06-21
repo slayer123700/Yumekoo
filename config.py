@@ -36,10 +36,8 @@ class config:
     HELP_IMG_URL = "https://files.catbox.moe/bggrlh.jpg"
     ALIVE_IMG_URL = "https://files.catbox.moe/f3yuiy.jpg"
     
-    
-    #Database
-   MONGODB_URI = "mongodb+srv://lollolopp0900:slayersan@cluster0.mge1ngz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" 
-   DATABASE_NAME = "test"
+    MONGODB_URI = "mongodb+srv://lollolopp0900:slayersan@cluster0.mge1ngz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" 
+    DATABASE_NAME = "test"
 
     #API
     ARQ_API_KEY = "RLWCED-WZASYO-AWOLTB-ITBWTP-ARQ"
