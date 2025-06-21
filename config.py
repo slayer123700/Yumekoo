@@ -1,43 +1,45 @@
+
+
 class config:
     
     #Client
-    API_ID = 0
-    API_HASH = "0"
-    BOT_TOKEN = "0:0-0"
-    BOT_NAME = "Your_Bot_Name"
-    BOT_USERNAME = "Your_Bot_Username"
-    BOT_ID = 0
+    API_ID = 26249286
+    API_HASH = "4e3bf0b014fda4ac752e8f4ab854279b"
+    BOT_TOKEN = "7830572812:AAFljrsYesFuYfg4skV7KvGuecMexT2X6w4"
+    BOT_NAME = "GODxMUSIC"
+    BOT_USERNAME = "GODxMUSIC_probot"
+    BOT_ID = 7830572812
     WORKERS = 30
     MAX_MESSAGE_CACHE_SIZE = 100
     MAX_CONCURRENT_TRANSMISSIONS = 10
     
      
     #Git
-    GIT_USERNAME = "Your_Git_Username"
+    GIT_USERNAME = "Slayer123700"
     GIT_URL_WITH_TOKEN = "https://Your_Git_Token@github.com/Your_Git_Username/Yumeko.git" 
 
 
     #Info
     BOT_VERSION = "x"
-    OWNER_ID = 5630057244
-    OWNER_USERNAME = "senpaiii10"
-    SUPPORT_CHAT = -1002069412308
+    OWNER_ID = 6018803920
+    OWNER_USERNAME = "slayer1237"
+    SUPPORT_CHAT = -1002333824980
     SUPPORT_CHAT_USERNAME = "Domihoes"
     SUPPORT_CHAT_LINK = "https://t.me/Domihoes"
-    LOG_CHANNEL = -1001625036774
-    ERROR_LOG_CHANNEL = -1001625036774
+    LOG_CHANNEL = -1002392274240
+    ERROR_LOG_CHANNEL = -1002392274240
     DOWNLOAD_LOCATION = "./downloads"
     COMMAND_PREFIXES = ["/" , "!" , "." , "#" , "$" , "%" , "&" , "?"] 
     CMD_STARTERS = "/.!&#%$"
-    STATS_IMG_URL = "https://files.catbox.moe/d69tm0.jpg"
-    START_IMG_URL = "https://files.catbox.moe/wybrme.jpg"
-    HELP_IMG_URL = "https://files.catbox.moe/j3tdbi.jpg"
-    ALIVE_IMG_URL = "https://files.catbox.moe/w4t9cj.jpg"
+    STATS_IMG_URL = "https://i.ibb.co/gFg5XstQ/photo-2025-05-24-04-00-24-7507857220025974820.jpg"
+    START_IMG_URL = "https://i.ibb.co/gFg5XstQ/photo-2025-05-24-04-00-24-7507857220025974820.jpg"
+    HELP_IMG_URL = "https://files.catbox.moe/bggrlh.jpg"
+    ALIVE_IMG_URL = "https://files.catbox.moe/f3yuiy.jpg"
     
     
     #Database
-    MONGODB_URI = "mongodb://localhost:27017" # Use Local Hosted Or Atlas !!
-    DATABASE_NAME = "Frieren"
+    MONGODB_URI = "mongodb+srv://musicbotxd:musicbotxd@cluster0.6thyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" # Use Local Hosted Or Atlas !!
+    DATABASE_NAME = "musicbot"
 
     #API
     ARQ_API_KEY = "RLWCED-WZASYO-AWOLTB-ITBWTP-ARQ"
@@ -48,10 +50,8 @@ class config:
     NEWS_URL = "https://sugoi-api.vercel.app/news?keyword={}"
     shayri_api_url = "https://hindi-quotes.vercel.app/random"
     BASE_URL = "https://api.waifu.pics"
-    Movie_Api = "5d3274c3bb08b4276482436c8444abc0"
-    Movie_RAC = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZDMyNzRjM2JiMDhiNDI3NjQ4MjQzNmM4NDQ0YWJjMCIsIm5iZiI6MTczMzIyMjgxMy42OTQwMDAyLCJzdWIiOiI2NzRlZTE5ZDJjZTRjZTdkZDYwOTU2YjAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.aXfQw0_CRrKl2iSJd9tFE1TVbWWVYNgysWkUVlwzyRg"
+    Movie_Api = "d6b8dd51c4e80b5888e2587d780300fc"
+    Movie_RAC = "AQFy0zIAeTrqXAyN24IN6WCSafrxbO81MFls0ObprFIFNDUixJJjgGITAdkghmp2aiWnhMnY-VbLFph-jaMKIEfsw7shXYiB6-qZOVlV0LKm3Imfd8GZ-AWzmj7O_v1VfcwtM8NeLkeJlGbaix6JpQeP_1ZefphDuxdCzrqzEOmaGeWvPj1cs9sjzYgTyAoehubC5XnbVuRU-7Xu6kmPssSQMYMABAZB35EGu47c-RAvyx43MkLKXzBQGKfU2Lx-YElS1U6jCwBTn4z6LYcct7ZT78CT7G-XK-P3PyLylYcGR0j90lGIzud7mJZm8ZNIHc-5NTlG-mxmK3l0MHjNMgW6bM_a9AAAAAGxDHVkAA"
     Pokedex = "https://sugoi-api.vercel.app/pokemon?name={name_or_id}"
     OPENAI_KEY = "xx" #Get From Open Ai's Website
     LYRICS_GENIUS_TOKEN = "x-x" #Get From Genius.com
-
-
