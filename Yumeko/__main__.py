@@ -113,9 +113,9 @@ async def start_cmd(_, message: Message):
     await x.delete()
 
     # Sticker
-    await message.reply_cached_media(
-        file_id="CAACAgUAAxkBAAJuUGeBadZTdf_CjZY5sg_-DiHVwN6NAAI4FAACMBsIVIcDmYcfk1ruHgQ"
-    )
+   # await message.reply_cached_media(
+      #  file_id="CAACAgUAAxkBAAJuUGeBadZTdf_CjZY5sg_-DiHVwN6NAAI4FAACMBsIVIcDmYcfk1ruHgQ"
+   # )
     
     await sleep(0.2)
 
