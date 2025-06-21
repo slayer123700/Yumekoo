@@ -5,7 +5,7 @@ class config:
     #Client
     API_ID = 26249286
     API_HASH = "4e3bf0b014fda4ac752e8f4ab854279b"
-    BOT_TOKEN = "7979900579:AAFQBE54bCFSvLH2s8XLBG9qvflGD85Ol2A"
+    BOT_TOKEN = "7979900579:AAHxT0bjTuJGlcC-g839gdT2rI5ZvbzCAHQ"
     BOT_NAME = "sʜɪɢᴀʀᴀkɪ ᴛᴏᴍᴜʀᴀ"
     BOT_USERNAME = "shigaraki_probot"
     BOT_ID = 7979900579
