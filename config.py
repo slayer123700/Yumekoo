@@ -24,9 +24,9 @@ class config:
     OWNER_ID = 6018803920
     OWNER_USERNAME = "slayer1237"
     SUPPORT_CHAT = -1002333824980
-    SUPPORT_CHAT_USERNAME = "Domihoes"
-    SUPPORT_CHAT_LINK = "https://t.me/Domihoes"
-    LOG_CHANNEL = -1002392274240
+    SUPPORT_CHAT_USERNAME = "https://t.me/+7e8YZmvFTbUyODY1"
+    SUPPORT_CHAT_LINK = "https://t.me/+7e8YZmvFTbUyODY1"
+    LOG_CHANNEL = -1002418311736
     ERROR_LOG_CHANNEL = -1002392274240
     DOWNLOAD_LOCATION = "./downloads"
     COMMAND_PREFIXES = ["/" , "!" , "." , "#" , "$" , "%" , "&" , "?"] 
