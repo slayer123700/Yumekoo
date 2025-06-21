@@ -38,8 +38,8 @@ class config:
     
     
     #Database
-   MONGODB_URI = "mongodb+srv://lollolopp0900:slayersan@cluster0.qyijxjr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" # Use Local Hosted Or Atlas !!
-   DATABASE_NAME = "shigu"
+   MONGODB_URI = "mongodb+srv://lollolopp0900:slayersan@cluster0.mge1ngz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" # Use Local Hosted Or Atlas !!
+   DATABASE_NAME = "test"
 
     #API
     ARQ_API_KEY = "RLWCED-WZASYO-AWOLTB-ITBWTP-ARQ"
