@@ -92,11 +92,11 @@ def get_main_menu_buttons():
     ]
     return InlineKeyboardMarkup(buttons)
 
+
 @app.on_message(filters.command("start", config.COMMAND_PREFIXES) & filters.private)
 @error
 @save
 async def start_cmd(_, message: Message):
-
     if len(message.command) > 1 and message.command[1] == "help":
         await help_command(app, message)
         return
@@ -113,22 +113,24 @@ async def start_cmd(_, message: Message):
     await x.delete()
 
     # Sticker
-   await message.reply_sticker(
-    sticker="CAACAgUAAxkBAAJuUGeBadZTdf_CjZY5sg_-DiHVwN6NAAI4FAACMBsIVIcDmYcfk1ruHgQ"
-   )
-    
+    await message.reply_sticker(
+        sticker="CAACAgUAAxkBAAJuUGeBadZTdf_CjZY5sg_-DiHVwN6NAAI4FAACMBsIVIcDmYcfk1ruHgQ"
+    )
     await sleep(0.2)
 
+    # Mentions
     user_mention = message.from_user.mention(style="md")
     bot_mention = app.me.mention(style="md")
 
+    # Welcome Image & Message
     await app.send_photo(
         chat_id=message.chat.id,
         photo=config.START_IMG_URL,
         caption=(
             f"Hey, {user_mention} 🧸\n"
-            f"I am {bot_mention} ♡, your versatile management bot, designed to help you take control of your groups using powerful modules and commands!\n\n"
-            f"[✨]({config.START_IMG_URL}) What I Can Do:\n"
+            f"I am {bot_mention} ♡, your versatile management bot, "
+            f"designed to help you take control of your groups using powerful modules and commands!\n\n"
+            f"[✨]({config.START_IMG_URL}) **What I Can Do:**\n"
             f" • Seamless management of your groups\n"
             f" • Powerful moderation tools\n"
             f" • Fun and engaging features\n\n"
@@ -138,7 +140,6 @@ async def start_cmd(_, message: Message):
         reply_markup=get_main_menu_buttons(),
         parse_mode="markdown"
     )
-
 
 @app.on_message(filters.command("help", prefixes=config.COMMAND_PREFIXES) & filters.private)
 @error
@@ -304,3 +305,4 @@ if __name__ == "__main__":
 
     except Exception as e:
         log.exception(e)
+    
