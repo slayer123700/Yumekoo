@@ -32,7 +32,7 @@ class config:
     COMMAND_PREFIXES = ["/" , "!" , "." , "#" , "$" , "%" , "&" , "?"] 
     CMD_STARTERS = "/.!&#%$"
     STATS_IMG_URL = "https://files.catbox.moe/uoiule.jpg"
-    START_IMG_URL = "https://files.catbox.moe/xfo8hk.jpg"
+    START_IMG_URL = "https://files.catbox.moe/c50glv.jpg"
     HELP_IMG_URL = "https://files.catbox.moe/bggrlh.jpg"
     ALIVE_IMG_URL = "https://files.catbox.moe/f3yuiy.jpg"
     
