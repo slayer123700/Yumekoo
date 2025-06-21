@@ -16,7 +16,7 @@ class config:
      
     #Git
     GIT_USERNAME = "Slayer123700"
-    GIT_URL_WITH_TOKEN = "https://Your_Git_Token@github.com/Your_Git_Username/Yumeko.git" 
+    GIT_URL_WITH_TOKEN = "https://Your_Git_Token@github.com/slayer123700/Yumeko.git" 
 
 
     #Info
