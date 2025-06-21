@@ -5,7 +5,7 @@ class config:
     #Client
     API_ID = 26249286
     API_HASH = "4e3bf0b014fda4ac752e8f4ab854279b"
-    BOT_TOKEN = "7830572812:AAFljrsYesFuYfg4skV7KvGuecMexT2X6w4"
+    BOT_TOKEN = "7830572812:AAGK_GxgkzYXab6GWA0t11sbOFQ1ICoscLE"
     BOT_NAME = "GODxMUSIC"
     BOT_USERNAME = "GODxMUSIC_probot"
     BOT_ID = 7830572812
