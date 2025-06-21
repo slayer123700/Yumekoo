@@ -38,7 +38,7 @@ class config:
     
     
     #Database
-   MONGODB_URI = "mongodb+srv://lollolopp0900:slayersan@cluster0.abcde.mongodb.net/?retryWrites=true&w=majority" # Use Local Hosted Or Atlas !!
+   MONGODB_URI = "mongodb+srv://lollolopp0900:slayersan@cluster0.mge1ngz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" # Use Local Hosted Or Atlas !!
    DATABASE_NAME = "test"
 
     #API
