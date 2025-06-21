@@ -31,8 +31,8 @@ class config:
     DOWNLOAD_LOCATION = "./downloads"
     COMMAND_PREFIXES = ["/" , "!" , "." , "#" , "$" , "%" , "&" , "?"] 
     CMD_STARTERS = "/.!&#%$"
-    STATS_IMG_URL = "https://i.ibb.co/gFg5XstQ/photo-2025-05-24-04-00-24-7507857220025974820.jpg"
-    START_IMG_URL = "https://i.ibb.co/gFg5XstQ/photo-2025-05-24-04-00-24-7507857220025974820.jpg"
+    STATS_IMG_URL = "https://files.catbox.moe/uoiule.jpg"
+    START_IMG_URL = "https://files.catbox.moe/xfo8hk.jpg"
     HELP_IMG_URL = "https://files.catbox.moe/bggrlh.jpg"
     ALIVE_IMG_URL = "https://files.catbox.moe/f3yuiy.jpg"
     
