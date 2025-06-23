@@ -5,7 +5,7 @@ class config:
     #Client
     API_ID = 26249286
     API_HASH = "4e3bf0b014fda4ac752e8f4ab854279b"
-    BOT_TOKEN = "7979900579:AAF1FkU4Q19gWL4NqLSAYqtrJqji-9b7Y-k"
+    BOT_TOKEN = "7979900579:AAFsLwoc_KV1TLzAS-RFZKOI8v1RgYE9a3Q"
     BOT_NAME = "sʜɪɢᴀʀᴀkɪ ᴛᴏᴍᴜʀᴀ"
     BOT_USERNAME = "shigaraki_probot"
     BOT_ID = 7979900579
@@ -23,10 +23,10 @@ class config:
     BOT_VERSION = "x"
     OWNER_ID = 6018803920
     OWNER_USERNAME = "slayer1237"
-    SUPPORT_CHAT = -1002333824980
+    SUPPORT_CHAT = -1002418311736
     SUPPORT_CHAT_USERNAME = "https://t.me/+7e8YZmvFTbUyODY1"
     SUPPORT_CHAT_LINK = "https://t.me/+7e8YZmvFTbUyODY1"
-    LOG_CHANNEL = -1002418311736
+    LOG_CHANNEL = -1002392274240
     ERROR_LOG_CHANNEL = -1002392274240
     DOWNLOAD_LOCATION = "./downloads"
     COMMAND_PREFIXES = ["/" , "!" , "." , "#" , "$" , "%" , "&" , "?"] 
