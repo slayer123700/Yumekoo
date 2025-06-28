@@ -7,7 +7,7 @@ from config import config
 from Yumeko.decorator.save import save 
 from Yumeko.decorator.errors import error
 
-AUDIO_FILE = "Yumeko.mp3"
+AUDIO_FILE = "Shigaraki.mp3"
 
 @app.on_message(filters.command("tts" , prefixes=config.COMMAND_PREFIXES))
 @error
