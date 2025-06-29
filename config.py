@@ -26,7 +26,7 @@ class config:
     SUPPORT_CHAT = -1002418311736
     SUPPORT_CHAT_USERNAME = "demon_worldsss"
     SUPPORT_CHAT_LINK = "https://t.me/demon_worldsss"
-    LOG_CHANNEL = https://t.me/shigarakilogger
+    LOG_CHANNEL = -1002809851681
     ERROR_LOG_CHANNEL = -1002392274240
     DOWNLOAD_LOCATION = "./downloads"
     COMMAND_PREFIXES = ["/" , "!" , "." , "#" , "$" , "%" , "&" , "?"] 
