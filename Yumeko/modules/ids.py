@@ -97,13 +97,6 @@ async def get_user_info(client: Client, message: Message):
 
     await x.edit_text("Fetching User Info...")
 
-    # Get profile photo
-    photo_count = await client.get_chat_photos_count(user_id)
-    user_photo = None
-    if photo_count > 0:
-        async for photo in client.get_chat_photos(user_id, limit=1):
-            user_photo = photo.file_id
-            break
 
     # Fetch additional info from database
     user_info = await get_user_infoo(user_id)
