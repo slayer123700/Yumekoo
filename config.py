@@ -5,7 +5,7 @@ class config:
     #Client
     API_ID = 26249286
     API_HASH = "4e3bf0b014fda4ac752e8f4ab854279b"
-    BOT_TOKEN = "7979900579:AAEGX0iuWQFChzoxO9-CAocb_aPf16uC17U"
+    BOT_TOKEN = "7979900579:AAH8itgYE6b9gIddOArIPg9Yqp03o-n1jqc"
     BOT_NAME = "sʜɪɢᴀʀᴀkɪ ᴛᴏᴍᴜʀᴀ"
     BOT_USERNAME = "shigaraki_probot"
     BOT_ID = 7979900579
@@ -21,11 +21,11 @@ class config:
 
     #Info
     BOT_VERSION = "x"
-    OWNER_ID = 6018803920
-    OWNER_USERNAME = "slayer1237"
-    SUPPORT_CHAT = -1002418311736
-    SUPPORT_CHAT_USERNAME = "demon_worldsss"
-    SUPPORT_CHAT_LINK = "https://t.me/demon_worldsss"
+    OWNER_ID = 6037958673
+    OWNER_USERNAME = "trulyforher"
+    SUPPORT_CHAT = -1002721595501
+    SUPPORT_CHAT_USERNAME = "RomanEmpire_Gateway"
+    SUPPORT_CHAT_LINK = "https://t.me/RomanEmpire_Gateway"
     LOG_CHANNEL = -1002809851681
     ERROR_LOG_CHANNEL = -1002392274240
     DOWNLOAD_LOCATION = "./downloads"
