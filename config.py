@@ -5,13 +5,18 @@ class config:
     #Client
     API_ID = 26249286
     API_HASH = "4e3bf0b014fda4ac752e8f4ab854279b"
-    BOT_TOKEN = "8040764357:AAGAR8ojTQdABD8pdl3FuoeB1HiftdaLKEc"
-    BOT_NAME = "test"
-    BOT_USERNAME = "yukixrobot"
-    BOT_ID = 8040764357
-    WORKERS = 30
+    BOT_TOKEN = "8336737769:AAE24kSGKiuFyNVPBhclNY5YVhkitM-LEMQ"
+    BOT_NAME = "resile"
+    BOT_USERNAME = "riselia_xbot"
+    BOT_ID = 8336737769
+    WORKERS = 20
     MAX_MESSAGE_CACHE_SIZE = 100
     MAX_CONCURRENT_TRANSMISSIONS = 10
+    SESSION_STRING = "x-x"
+    START_STICKER_FILE_ID = [
+        "CAACAgUAAyEFAASjn0HcAAIKJ2iIUNOmfD5iFAj8_v3GTpvx49q-AAIwFAAC5qa4Vs2rp4A1Z5UFHgQ",
+        "CAACAgUAAyEFAASjn0HcAAIKDGiIRiZ2LXT6sjoBxPvyFYdPFTJgAAKpFgACfE9IVJy0EWc7L1VlHgQ",
+    ]
     
      
     #Git
@@ -20,21 +25,21 @@ class config:
 
 
     #Info
-    BOT_VERSION = "x"
+   BOT_VERSION = "3.0"
     OWNER_ID = 6018803920
     OWNER_USERNAME = "slayer1237"
     SUPPORT_CHAT = -1002745123292
-    SUPPORT_CHAT_USERNAME = "RomanEmpire_Gateway"
-    SUPPORT_CHAT_LINK = "https://t.me/RomanEmpire_Gateway"
+    SUPPORT_CHAT_USERNAME = "https://t.me/+wBBJZa5IoEQ0ZmQ1"
+    SUPPORT_CHAT_LINK = "https://t.me/+wBBJZa5IoEQ0ZmQ1"
     LOG_CHANNEL = -1002745123292
     ERROR_LOG_CHANNEL = -1002745123292
     DOWNLOAD_LOCATION = "./downloads"
     COMMAND_PREFIXES = ["/" , "!" , "." , "#" , "$" , "%" , "&" , "?"] 
     CMD_STARTERS = "/.!&#%$"
-    STATS_IMG_URL = "https://files.catbox.moe/xfo8hk.jpg"
-    START_IMG_URL = "https://files.catbox.moe/xfo8hk.jpg"
-    HELP_IMG_URL = "https://files.catbox.moe/xfo8hk.jpg"
-    ALIVE_IMG_URL = "https://files.catbox.moe/xfo8hk.jpg"
+    STATS_IMG_URL = "https://files.catbox.moe/abny0k.jpg"
+    START_IMG_URL = "https://files.catbox.moe/xl7rni.jpg"
+    HELP_IMG_URL = "https://files.catbox.moe/u8xpv1.jpg"
+    ALIVE_IMG_URL = "https://files.catbox.moe/du3d0a.jpg"
     
     MONGODB_URI = "mongodb+srv://lollolopp0900:slayersan@cluster0.mge1ngz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" 
     DATABASE_NAME = "test"
