@@ -120,7 +120,7 @@ async def start_handler(client, message):
     user_mention = message.from_user.mention(style="md")
     bot_mention = client.me.mention(style="md")
 
-    await message.reply_photo(
+    await message.reply_photo( 
         photo=config.START_IMG_URL,
         caption=(
           await message.reply_photo(
@@ -139,7 +139,8 @@ async def start_handler(client, message):
         f"𝖢𝗅𝗂𝖼𝗄 𝗍𝗁𝖾 𝖧𝖾𝗅𝗉 𝖻𝗎𝗍𝗍𝗈𝗇 𝖻𝖾𝗅𝗈𝗐 𝗍𝗈 𝗀𝖾𝗍 𝖺𝗅𝗅 𝗍𝗁𝖾 𝖽𝖾𝗍𝖺𝗂𝗅𝗌 𝖺𝖻𝗈𝗎𝗍 𝗆𝗒 𝗆𝗈𝖽𝗎𝗅𝖾𝗌 𝖺𝗇𝖽 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌.",
         reply_markup=get_main_menu_buttons(),
         invert_media = True
-    )
+    ),
+        )
 
 @app.on_message(filters.command("help", prefixes=config.COMMAND_PREFIXES) & filters.private)
 @error
