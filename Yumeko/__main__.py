@@ -133,9 +133,6 @@ async def start_cmd(_, message : Message):
     ),
     reply_markup=get_main_menu_buttons(),
     parse_mode="html",
-)
-
-
 @app.on_message(filters.command("help", prefixes=config.COMMAND_PREFIXES) & filters.private)
 @error
 @save
