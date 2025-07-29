@@ -5,10 +5,10 @@ class config:
     #Client
     API_ID = 26249286
     API_HASH = "4e3bf0b014fda4ac752e8f4ab854279b"
-    BOT_TOKEN = "7979900579:AAH8itgYE6b9gIddOArIPg9Yqp03o-n1jqc"
-    BOT_NAME = "sʜɪɢᴀʀᴀkɪ ᴛᴏᴍᴜʀᴀ"
-    BOT_USERNAME = "shigaraki_probot"
-    BOT_ID = 7979900579
+    BOT_TOKEN = "8336737769:AAGkq2p97UDCvein5EpHh8DXl9Cx07-WuTA"
+    BOT_NAME = "test"
+    BOT_USERNAME = "riselia_xbot"
+    BOT_ID = 8336737769
     WORKERS = 30
     MAX_MESSAGE_CACHE_SIZE = 100
     MAX_CONCURRENT_TRANSMISSIONS = 10
@@ -21,13 +21,13 @@ class config:
 
     #Info
     BOT_VERSION = "x"
-    OWNER_ID = 6037958673
-    OWNER_USERNAME = "trulyforher"
-    SUPPORT_CHAT = -1002721595501
+    OWNER_ID = 6018803920
+    OWNER_USERNAME = "slayer1237"
+    SUPPORT_CHAT = -1002745123292
     SUPPORT_CHAT_USERNAME = "RomanEmpire_Gateway"
     SUPPORT_CHAT_LINK = "https://t.me/RomanEmpire_Gateway"
-    LOG_CHANNEL = -1002809851681
-    ERROR_LOG_CHANNEL = -1002392274240
+    LOG_CHANNEL = -1002745123292
+    ERROR_LOG_CHANNEL = -1002745123292
     DOWNLOAD_LOCATION = "./downloads"
     COMMAND_PREFIXES = ["/" , "!" , "." , "#" , "$" , "%" , "&" , "?"] 
     CMD_STARTERS = "/.!&#%$"
