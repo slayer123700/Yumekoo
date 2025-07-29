@@ -13,7 +13,6 @@ from asyncio import sleep
 from Yumeko.decorator.save import save 
 from Yumeko.decorator.errors import error 
 import shutil
-from Yumeko.modules.antiflood import cleanup_flood_tracker
 import random
 MODULES = ["modules", "watchers", "admin", "decorator"]
 LOADED_MODULES = {}
