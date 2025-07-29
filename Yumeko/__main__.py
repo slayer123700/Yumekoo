@@ -87,7 +87,7 @@ def get_main_menu_buttons():
             InlineKeyboardButton("👤 ᴏᴡɴᴇʀ", user_id=config.OWNER_ID)
         ],
         [
-            InlineKeyboardButton(" Cᴏᴍᴍᴀɴᴅs 👀 ", callback_data="yumeko_help")
+            InlineKeyboardButton("🆘 ʜᴇʟᴘ 🆘", callback_data="yumeko_help")
         ]
     ]
     return InlineKeyboardMarkup(buttons)
@@ -104,19 +104,19 @@ async def start_cmd(_, message : Message):
     
     x = await message.reply_text(f"`Hie {message.from_user.first_name} <3`")
     await sleep(0.3)
-    await x.edit_text("🎊")
+    await x.edit_text("🐾")
     await sleep(0.8)
-    await x.edit_text("🎉")
+    await x.edit_text("❄️")
     await sleep(0.8)
-    await x.edit_text("⚡️")
+    await x.edit_text("🕊️")
     await sleep(0.8)
     await x.delete()
     
-    await message.reply_cached_media(file_id = "CAACAgUAAyEFAASjn0HcAAIKDGiIRiZ2LXT6sjoBxPvyFYdPFTJgAAKpFgACfE9IVJy0EWc7L1VlHgQ") 
+    await message.reply_cached_media(file_id = "CAACAgUAAyEFAASjn0HcAAIKDGiIRiZ2LXT6sjoBxPvyFYdPFTJgAAKpFgACfE9IVJy0EWc7L1VlHgQ")    
     
     await sleep(0.2)
     
-   user_mention = message.from_user.mention(style="md")
+    user_mention = message.from_user.mention(style="md")
     bot_mention = app.me.mention(style="md")
     await message.reply(
         f"**𝖧𝖾𝗒, {𝗎𝗌𝖾𝗋_𝗆𝖾𝗇𝗍𝗂𝗈𝗇} 🧸**\n"
@@ -131,17 +131,18 @@ async def start_cmd(_, message : Message):
         invert_media = True
     )
 
+
 @app.on_message(filters.command("help", prefixes=config.COMMAND_PREFIXES) & filters.private)
 @error
 @save
 async def help_command(client, message: Message):
     prefixes = " ".join(config.COMMAND_PREFIXES)
     await message.reply(
-        text=f"📚 ʜᴇʀᴇ’s ᴀ ᴄᴏᴍᴘʟᴇᴛᴇ ʟɪsᴛ ᴏғ ᴀʟʟ ᴍʏ ғᴜɴᴄᴛɪᴏɴᴀʟ ᴍᴏᴅᴜʟᴇs!\n"
-             f"🧩 ᴛᴀᴘ ᴏɴ ᴀɴʏ ᴍᴏᴅᴜʟᴇ ʙᴇʟᴏᴡ ᴛᴏ ᴠɪᴇᴡ ɪᴛs ғᴜʟʟ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀɴᴅ ᴜsᴀɢᴇ. \n\n"
-             f"🔧 sᴜᴘᴘᴏʀᴛᴇᴅ ᴘʀᴇғɪxᴇs: {prefixes}\n\n"
-             f"[📩]({config.HELP_IMG_URL})🐞 ғᴏᴜɴᴅ ᴀ ʙᴜɢ?\n"
-             f"📬 ᴜsᴇ ᴛʜᴇ /bug ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʀᴇᴘᴏʀᴛ ɪᴛ ᴀɴᴅ ɪ’ʟʟ ғɪx ɪᴛ ᴀs sᴏᴏɴ ᴀs ᴘᴏssɪʙʟᴇ!",
+        text=f"**𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝗅𝗂𝗌𝗍 𝗈𝖿 𝖺𝗅𝗅 𝗆𝗒 𝗆𝗈𝖽𝗎𝗅𝖾𝗌!**\n"
+             f"**𝖢𝗅𝗂𝖼𝗄 𝗈𝗇 𝖺 𝗆𝗈𝖽𝗎𝗅𝖾 𝖻𝖾𝗅𝗈𝗐 𝗍𝗈 𝗀𝖾𝗍 𝖽𝖾𝗍𝖺𝗂𝗅𝖾𝖽 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖺𝖻𝗈𝗎𝗍 𝗂𝗍.**\n\n"
+             f"🔹 **𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖯𝗋𝖾𝖿𝗂𝗑𝖾𝗌:** {prefixes} \n\n"
+             f"[📩]({config.HELP_IMG_URL}) **𝖥𝗈𝗎𝗇𝖽 𝖺 𝖻𝗎𝗀?**\n"
+             f"𝖱𝖾𝗉𝗈𝗋𝗍 𝗂𝗍 𝗎𝗌𝗂𝗇𝗀 𝗍𝗁𝖾 /𝖻𝗎𝗀 𝖼𝗈𝗆𝗆𝖺𝗇𝖽, 𝖺𝗇𝖽 𝖨’𝗅𝗅 𝗀𝖾𝗍 𝗂𝗍 𝖿𝗂𝗑𝖾𝖽 𝖺𝗌 𝗌𝗈𝗈𝗇 𝖺𝗌 𝗉𝗈𝗌𝗌𝗂𝖻𝗅𝖾!",
         reply_markup=get_paginated_buttons()
     )
 
@@ -149,11 +150,11 @@ async def help_command(client, message: Message):
 async def show_help_menu(client, query: CallbackQuery):
     prefixes = " ".join(config.COMMAND_PREFIXES)
     await query.message.edit(
-        𝗍𝖾𝗑𝗍==f"📚 ʜᴇʀᴇ’s ᴀ ᴄᴏᴍᴘʟᴇᴛᴇ ʟɪsᴛ ᴏғ ᴀʟʟ ᴍʏ ғᴜɴᴄᴛɪᴏɴᴀʟ ᴍᴏᴅᴜʟᴇs!\n"
-             f"🧩 ᴛᴀᴘ ᴏɴ ᴀɴʏ ᴍᴏᴅᴜʟᴇ ʙᴇʟᴏᴡ ᴛᴏ ᴠɪᴇᴡ ɪᴛs ғᴜʟʟ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀɴᴅ ᴜsᴀɢᴇ. \n\n"
-             f"🔧 sᴜᴘᴘᴏʀᴛᴇᴅ ᴘʀᴇғɪxᴇs: {prefixes}\n\n"
-             f"[📩]({config.HELP_IMG_URL})🐞 ғᴏᴜɴᴅ ᴀ ʙᴜɢ?\n"
-             f"📬 ᴜsᴇ ᴛʜᴇ /bug ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʀᴇᴘᴏʀᴛ ɪᴛ ᴀɴᴅ ɪ’ʟʟ ғɪx ɪᴛ ᴀs sᴏᴏɴ ᴀs ᴘᴏssɪʙʟᴇ!",
+        𝗍𝖾𝗑𝗍=f"**𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝗅𝗂𝗌𝗍 𝗈𝖿 𝖺𝗅𝗅 𝗆𝗒 𝗆𝗈𝖽𝗎𝗅𝖾𝗌!**\n"
+             f"**𝖢𝗅𝗂𝖼𝗄 𝗈𝗇 𝖺 𝗆𝗈𝖽𝗎𝗅𝖾 𝖻𝖾𝗅𝗈𝗐 𝗍𝗈 𝗀𝖾𝗍 𝖽𝖾𝗍𝖺𝗂𝗅𝖾𝖽 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖺𝖻𝗈𝗎𝗍 𝗂𝗍.**\n\n"
+             f"🔹 **𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖯𝗋𝖾𝖿𝗂𝗑𝖾𝗌:** {𝗉𝗋𝖾𝖿𝗂𝗑𝖾𝗌} \n\n"
+             f"[📩]({𝖼𝗈𝗇𝖿𝗂𝗀.𝖧𝖤𝖫𝖯_𝖨𝖬𝖦_𝖴𝖱𝖫}) **𝖥𝗈𝗎𝗇𝖽 𝖺 𝖻𝗎𝗀?**\n"
+             f"𝖱𝖾𝗉𝗈𝗋𝗍 𝗂𝗍 𝗎𝗌𝗂𝗇𝗀 𝗍𝗁𝖾 /𝖻𝗎𝗀 𝖼𝗈𝗆𝗆𝖺𝗇𝖽, 𝖺𝗇𝖽 𝖨’𝗅𝗅 𝗀𝖾𝗍 𝗂𝗍 𝖿𝗂𝗑𝖾𝖽 𝖺𝗌 𝗌𝗈𝗈𝗇 𝖺𝗌 𝗉𝗈𝗌𝗌𝗂𝖻𝗅𝖾!",
         reply_markup=get_paginated_buttons(),
         invert_media=True
     )
@@ -194,11 +195,11 @@ async def handle_pagination_callback(client, query: CallbackQuery):
 
         # Edit both the message text and reply markup
         await query.message.edit(
-        𝗍𝖾𝗑𝗍==f"📚 ʜᴇʀᴇ’s ᴀ ᴄᴏᴍᴘʟᴇᴛᴇ ʟɪsᴛ ᴏғ ᴀʟʟ ᴍʏ ғᴜɴᴄᴛɪᴏɴᴀʟ ᴍᴏᴅᴜʟᴇs!\n"
-             f"🧩 ᴛᴀᴘ ᴏɴ ᴀɴʏ ᴍᴏᴅᴜʟᴇ ʙᴇʟᴏᴡ ᴛᴏ ᴠɪᴇᴡ ɪᴛs ғᴜʟʟ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀɴᴅ ᴜsᴀɢᴇ. \n\n"
-             f"🔧 sᴜᴘᴘᴏʀᴛᴇᴅ ᴘʀᴇғɪxᴇs: {prefixes}\n\n"
-             f"[📩]({config.HELP_IMG_URL})🐞 ғᴏᴜɴᴅ ᴀ ʙᴜɢ?\n"
-             f"📬 ᴜsᴇ ᴛʜᴇ /bug ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʀᴇᴘᴏʀᴛ ɪᴛ ᴀɴᴅ ɪ’ʟʟ ғɪx ɪᴛ ᴀs sᴏᴏɴ ᴀs ᴘᴏssɪʙʟᴇ!",
+        𝗍𝖾𝗑𝗍=f"**𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝗅𝗂𝗌𝗍 𝗈𝖿 𝖺𝗅𝗅 𝗆𝗒 𝗆𝗈𝖽𝗎𝗅𝖾𝗌!**\n"
+             f"**𝖢𝗅𝗂𝖼𝗄 𝗈𝗇 𝖺 𝗆𝗈𝖽𝗎𝗅𝖾 𝖻𝖾𝗅𝗈𝗐 𝗍𝗈 𝗀𝖾𝗍 𝖽𝖾𝗍𝖺𝗂𝗅𝖾𝖽 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖺𝖻𝗈𝗎𝗍 𝗂𝗍.**\n\n"
+             f"🔹 **𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖯𝗋𝖾𝖿𝗂𝗑𝖾𝗌:** {𝗉𝗋𝖾𝖿𝗂𝗑𝖾𝗌} \n\n"
+             f"[📩]({𝖼𝗈𝗇𝖿𝗂𝗀.𝖧𝖤𝖫𝖯_𝖨𝖬𝖦_𝖴𝖱𝖫}) **𝖥𝗈𝗎𝗇𝖽 𝖺 𝖻𝗎𝗀?**\n"
+             f"𝖱𝖾𝗉𝗈𝗋𝗍 𝗂𝗍 𝗎𝗌𝗂𝗇𝗀 𝗍𝗁𝖾 /𝖻𝗎𝗀 𝖼𝗈𝗆𝗆𝖺𝗇𝖽, 𝖺𝗇𝖽 𝖨’𝗅𝗅 𝗀𝖾𝗍 𝗂𝗍 𝖿𝗂𝗑𝖾𝖽 𝖺𝗌 𝗌𝗈𝗈𝗇 𝖺𝗌 𝗉𝗈𝗌𝗌𝗂𝖻𝗅𝖾!",
             reply_markup=get_paginated_buttons(page),
             invert_media=True
         )
@@ -211,11 +212,11 @@ async def handle_main_menu_callback(client, query: CallbackQuery):
     prefixes = " ".join(config.COMMAND_PREFIXES)
 
     await query.message.edit(
-        𝗍𝖾𝗑𝗍==f"📚 ʜᴇʀᴇ’s ᴀ ᴄᴏᴍᴘʟᴇᴛᴇ ʟɪsᴛ ᴏғ ᴀʟʟ ᴍʏ ғᴜɴᴄᴛɪᴏɴᴀʟ ᴍᴏᴅᴜʟᴇs!\n"
-             f"🧩 ᴛᴀᴘ ᴏɴ ᴀɴʏ ᴍᴏᴅᴜʟᴇ ʙᴇʟᴏᴡ ᴛᴏ ᴠɪᴇᴡ ɪᴛs ғᴜʟʟ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀɴᴅ ᴜsᴀɢᴇ. \n\n"
-             f"🔧 sᴜᴘᴘᴏʀᴛᴇᴅ ᴘʀᴇғɪxᴇs: {prefixes}\n\n"
-             f"[📩]({config.HELP_IMG_URL})🐞 ғᴏᴜɴᴅ ᴀ ʙᴜɢ?\n"
-             f"📬 ᴜsᴇ ᴛʜᴇ /bug ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʀᴇᴘᴏʀᴛ ɪᴛ ᴀɴᴅ ɪ’ʟʟ ғɪx ɪᴛ ᴀs sᴏᴏɴ ᴀs ᴘᴏssɪʙʟᴇ!",
+        𝗍𝖾𝗑𝗍=f"**𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝗅𝗂𝗌𝗍 𝗈𝖿 𝖺𝗅𝗅 𝗆𝗒 𝗆𝗈𝖽𝗎𝗅𝖾𝗌!**\n"
+             f"**𝖢𝗅𝗂𝖼𝗄 𝗈𝗇 𝖺 𝗆𝗈𝖽𝗎𝗅𝖾 𝖻𝖾𝗅𝗈𝗐 𝗍𝗈 𝗀𝖾𝗍 𝖽𝖾𝗍𝖺𝗂𝗅𝖾𝖽 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖺𝖻𝗈𝗎𝗍 𝗂𝗍.**\n\n"
+             f"🔹 **𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖯𝗋𝖾𝖿𝗂𝗑𝖾𝗌:** {𝗉𝗋𝖾𝖿𝗂𝗑𝖾𝗌} \n\n"
+             f"[📩]({𝖼𝗈𝗇𝖿𝗂𝗀.𝖧𝖤𝖫𝖯_𝖨𝖬𝖦_𝖴𝖱𝖫}) **𝖥𝗈𝗎𝗇𝖽 𝖺 𝖻𝗎𝗀?**\n"
+             f"𝖱𝖾𝗉𝗈𝗋𝗍 𝗂𝗍 𝗎𝗌𝗂𝗇𝗀 𝗍𝗁𝖾 /𝖻𝗎𝗀 𝖼𝗈𝗆𝗆𝖺𝗇𝖽, 𝖺𝗇𝖽 𝖨’𝗅𝗅 𝗀𝖾𝗍 𝗂𝗍 𝖿𝗂𝗑𝖾𝖽 𝖺𝗌 𝗌𝗈𝗈𝗇 𝖺𝗌 𝗉𝗈𝗌𝗌𝗂𝖻𝗅𝖾!",
         reply_markup=get_paginated_buttons(),
         invert_media=True
     )
@@ -223,7 +224,7 @@ async def handle_main_menu_callback(client, query: CallbackQuery):
 @app.on_message(filters.command(["start" , "help"], prefixes=config.COMMAND_PREFIXES) & filters.group)
 async def start_command(client, message: Message):
     button = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Sᴛᴀʀᴛ ɪɴ ᴘᴍ", url="https://t.me/shigaraki_probot?start=help")]
+        [InlineKeyboardButton("Sᴛᴀʀᴛ ɪɴ ᴘᴍ", url="https://t.me/Frierenzbot?start=help")]
     ])
     await message.reply(
         text=f"**𝖧𝖾𝗅𝗅𝗈, {message.from_user.first_name} <3**\n"
