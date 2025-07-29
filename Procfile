@@ -1,1 +1,1 @@
-worker: python3 -m Yumekoo-master
+worker: python3 -m Yumeko
