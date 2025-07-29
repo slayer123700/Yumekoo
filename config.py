@@ -25,7 +25,7 @@ class config:
 
 
     #Info
-   BOT_VERSION = "3.0"
+   BOT_VERSION = "x"
     OWNER_ID = 6018803920
     OWNER_USERNAME = "slayer1237"
     SUPPORT_CHAT = -1002745123292
