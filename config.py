@@ -5,7 +5,7 @@ class config:
     #Client
     API_ID = 26249286
     API_HASH = "4e3bf0b014fda4ac752e8f4ab854279b"
-    BOT_TOKEN = "88040764357:AAGCnDKS-dTHKxjRgP0Ka4nQBvF0dnZabKA"
+    BOT_TOKEN = "8040764357:AAGAR8ojTQdABD8pdl3FuoeB1HiftdaLKEc"
     BOT_NAME = "test"
     BOT_USERNAME = "yukixrobot"
     BOT_ID = 8040764357
