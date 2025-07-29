@@ -116,20 +116,10 @@ async def start_cmd(_, message : Message):
     
     await sleep(0.2)
     
-async def start_handler(client, message):
-    user_mention = message.from_user.mention(style="md")
-    bot_mention = client.me.mention(style="md")
-
-    await message.reply_photo( 
-        photo=config.START_IMG_URL,
-        caption=(
-          await message.reply_photo(
-    photo=config.START_IMG_URL,
-    caption=(
-        await message.reply_photo(
-    photo=config.START_IMG_URL,
-    caption=(
-       f"**𝖧𝖾𝗒, {𝗎𝗌𝖾𝗋_𝗆𝖾𝗇𝗍𝗂𝗈𝗇} 🧸**\n"
+   user_mention = message.from_user.mention(style="md")
+    bot_mention = app.me.mention(style="md")
+    await message.reply(
+        f"**𝖧𝖾𝗒, {𝗎𝗌𝖾𝗋_𝗆𝖾𝗇𝗍𝗂𝗈𝗇} 🧸**\n"
         f"**𝖨 𝖺𝗆 {𝖻𝗈𝗍_𝗆𝖾𝗇𝗍𝗂𝗈𝗇} ♡ , 𝗒𝗈𝗎𝗋 𝗏𝖾𝗋𝗌𝖺𝗍𝗂𝗅𝖾 𝗆𝖺𝗇𝖺𝗀𝖾𝗆𝖾𝗇𝗍 𝖻𝗈𝗍, 𝖽𝖾𝗌𝗂𝗀𝗇𝖾𝖽 𝗍𝗈 𝗁𝖾𝗅𝗉 𝗒𝗈𝗎 𝗍𝖺𝗄𝖾 𝖼𝗈𝗇𝗍𝗋𝗈𝗅 𝗈𝖿 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌 𝗐𝗂𝗍𝗁 𝖾𝖺𝗌𝖾 𝗎𝗌𝗂𝗇𝗀 𝗆𝗒 𝗉𝗈𝗐𝖾𝗋𝖿𝗎𝗅 𝗆𝗈𝖽𝗎𝗅𝖾𝗌 𝖺𝗇𝖽 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌!**\n\n"
         f"[✨]({𝖼𝗈𝗇𝖿𝗂𝗀.𝖲𝖳𝖠𝖱𝖳_𝖨𝖬𝖦_𝖴𝖱𝖫}) **𝖶𝗁𝖺𝗍 𝖨 𝖢𝖺𝗇 𝖣𝗈:**\n"
         f" • 𝖲𝖾𝖺𝗆𝗅𝖾𝗌𝗌 𝗆𝖺𝗇𝖺𝗀𝖾𝗆𝖾𝗇𝗍 𝗈𝖿 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌\n"
@@ -139,8 +129,7 @@ async def start_handler(client, message):
         f"𝖢𝗅𝗂𝖼𝗄 𝗍𝗁𝖾 𝖧𝖾𝗅𝗉 𝖻𝗎𝗍𝗍𝗈𝗇 𝖻𝖾𝗅𝗈𝗐 𝗍𝗈 𝗀𝖾𝗍 𝖺𝗅𝗅 𝗍𝗁𝖾 𝖽𝖾𝗍𝖺𝗂𝗅𝗌 𝖺𝖻𝗈𝗎𝗍 𝗆𝗒 𝗆𝗈𝖽𝗎𝗅𝖾𝗌 𝖺𝗇𝖽 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌.",
         reply_markup=get_main_menu_buttons(),
         invert_media = True
-    ),
-        )
+    )
 
 @app.on_message(filters.command("help", prefixes=config.COMMAND_PREFIXES) & filters.private)
 @error
