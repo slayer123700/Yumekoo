@@ -119,17 +119,21 @@ async def start_cmd(_, message : Message):
     user_mention = message.from_user.mention(style="md")
     bot_mention = app.me.mention(style="md")
     await message.reply(
-        f"ʜᴇʏ, {user_mention} } 🎀\n"
+      await message.reply_photo(
+    photo=𝖼𝗈𝗇𝖿𝗂𝗀.𝖲𝖳𝖠𝖱𝖳_𝖨𝖬𝖦_𝖴𝖱𝖫,
+    caption=(
+        f"ʜᴇʏ, {user_mention} 🎀\n"
         f"ɪ'ᴍ {bot_mention} ♡💫, ʏᴏᴜʀ ᴍᴜʟᴛɪᴛᴀsᴋɪɴɢ ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ, ʙᴜɪʟᴛ ᴛᴏ sᴛʀᴇᴀᴍʟɪɴᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴡɪᴛʜ ᴀᴅᴠᴀɴᴄᴇᴅ ᴛᴏᴏʟs ᴀɴᴅ ғᴇᴀᴛᴜʀᴇs! 🌸\n\n"
-        f"[✨]({𝖼𝗈𝗇𝖿𝗂𝗀.𝖲𝖳𝖠𝖱𝖳_𝖨𝖬𝖦_𝖴𝖱𝖫}) ✨ ʜᴇʀᴇ's ᴡʜᴀᴛ ɪ ᴄᴀɴ ᴅᴏ: \n"
-        f"• ᴇғғɪᴄɪᴇɴᴛ ɢʀᴏᴜᴘ sᴜᴘᴇʀᴠɪsɪᴏɴ🛠\n"
-        f"• ᴀᴅᴠᴀɴᴄᴇᴅ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ ᴏᴘᴛɪᴏɴs🚫"
-        f"• ᴇɴᴛᴇʀᴛᴀɪɴɪɴɢ ᴀɴᴅ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴍᴏᴅᴜʟᴇs🎮"
-        f"📚 Nᴇᴇᴅ ʜᴇʟᴘ ᴏʀ ᴡᴀɴɴᴀ ᴇxᴘʟᴏʀᴇ?"
-        f"ᴄʟɪᴄᴋ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ꜰᴏʀ ᴀ ᴄᴏᴍᴘʟᴇᴛᴇ ʟɪsᴛ ᴏғ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ᴍᴏᴅᴜʟᴇs. 💬",
-        reply_markup=get_main_menu_buttons(),
-        invert_media = True
-    )
+        f"✨ ʜᴇʀᴇ's ᴡʜᴀᴛ ɪ ᴄᴀɴ ᴅᴏ:\n"
+        f"• ᴇғғɪᴄɪᴇɴᴛ ɢʀᴏᴜᴘ sᴜᴘᴇʀᴠɪsɪᴏɴ 🛠\n"
+        f"• ᴀᴅᴠᴀɴᴄᴇᴅ ᴍᴏᴅᴇʀᴀᴛɪᴏɴ ᴏᴘᴛɪᴏɴs 🚫\n"
+        f"• ᴇɴᴛᴇʀᴛᴀɪɴɪɴɢ ᴀɴᴅ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴍᴏᴅᴜʟᴇs 🎮\n\n"
+        f"📚 Nᴇᴇᴅ ʜᴇʟᴘ ᴏʀ ᴡᴀɴɴᴀ ᴇxᴘʟᴏʀᴇ?\n"
+        f"ᴄʟɪᴄᴋ ᴛʜᴇ <b>ʜᴇʟᴘ</b> ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ꜰᴏʀ ᴀ ᴄᴏᴍᴘʟᴇᴛᴇ ʟɪsᴛ ᴏғ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs 💬"
+    ),
+    reply_markup=get_main_menu_buttons(),
+    parse_mode="html",
+)
 
 
 @app.on_message(filters.command("help", prefixes=config.COMMAND_PREFIXES) & filters.private)
