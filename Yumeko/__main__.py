@@ -110,7 +110,6 @@ def get_main_menu_buttons():
         ],
         [
             InlineKeyboardButton("Cᴏᴍᴍᴀɴᴅs", callback_data="yumeko_help"),
-            InlineKeyboardButton("Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", callback_data = "source_code" )
         ]
     ]
     return InlineKeyboardMarkup(buttons)
