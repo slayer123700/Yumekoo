@@ -126,6 +126,9 @@ async def start_handler(client, message):
           await message.reply_photo(
     photo=config.START_IMG_URL,
     caption=(
+        await message.reply_photo(
+    photo=config.START_IMG_URL,
+    caption=(
         f"ʜᴇʏ, {user_mention} 🎀\n"
         f"ɪ'ᴍ {bot_mention} ♡💫, ʏᴏᴜʀ ᴍᴜʟᴛɪᴛᴀsᴋɪɴɢ ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ, ʙᴜɪʟᴛ ᴛᴏ sᴛʀᴇᴀᴍʟɪɴᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴡɪᴛʜ ᴀᴅᴠᴀɴᴄᴇᴅ ᴛᴏᴏʟs ᴀɴᴅ ғᴇᴀᴛᴜʀᴇs! 🌸\n\n"
         f"✨ ʜᴇʀᴇ's ᴡʜᴀᴛ ɪ ᴄᴀɴ ᴅᴏ:\n\n"
@@ -135,7 +138,9 @@ async def start_handler(client, message):
         f"📚 Nᴇᴇᴅ ʜᴇʟᴘ ᴏʀ ᴡᴀɴɴᴀ ᴇxᴘʟᴏʀᴇ?\n"
         f"ᴄʟɪᴄᴋ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ꜰᴏʀ ᴀ ᴄᴏᴍᴘʟᴇᴛᴇ ʟɪsᴛ ᴏғ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ᴍᴏᴅᴜʟᴇs. 💬"
     ),
-        reply_markup=get_main_menu_buttons(),
+    reply_markup=get_main_menu_buttons()
+)
+
         parse_mode="html"
     )
 
