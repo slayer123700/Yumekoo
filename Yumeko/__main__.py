@@ -327,8 +327,7 @@ if __name__ == "__main__":
             scheduler.start()
             
             # Schedule the antiflood cleanup task to run every 5 minutes
-            scheduler.add_job(cleanup_flood_tracker, 'interval', minutes=5, id='antiflood_cleanup')
-            log.info("Scheduled antiflood cleanup task to run every 5 minutes")
+
             
             log.info("Async components initialized.")
 
