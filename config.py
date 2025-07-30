@@ -5,10 +5,10 @@ class config:
     #Client
     API_ID = 26249286
     API_HASH = "4e3bf0b014fda4ac752e8f4ab854279b"
-    BOT_TOKEN = "8336737769:AAEyBpCzMo_KJF-aH3SmQYqqrgQBtkMVhfo"
+    BOT_TOKEN = ""
     BOT_NAME = "resile"
     BOT_USERNAME = "riselia_xbot"
-    BOT_ID = 8336737769
+    BOT_ID = 
     WORKERS = 20
     MAX_MESSAGE_CACHE_SIZE = 100
     MAX_CONCURRENT_TRANSMISSIONS = 10
