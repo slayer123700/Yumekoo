@@ -13,10 +13,15 @@ from asyncio import sleep
 from Yumeko.decorator.save import save 
 from Yumeko.decorator.errors import error 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from Yumeko.modules.antiflood import cleanup_flood_tracker  # Make sure this line comes BEFORE usage
+
 scheduler = AsyncIOScheduler()
 
-# Later, after scheduler.start()
+# Now it's safe to add the job
 scheduler.add_job(cleanup_flood_tracker, 'interval', minutes=5, id='antiflood_cleanup')
+
+scheduler.start()
+
 import shutil
 import random
 MODULES = ["modules", "watchers", "admin", "decorator"]
