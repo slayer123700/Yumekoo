@@ -13,6 +13,7 @@ from asyncio import sleep
 from Yumeko.decorator.save import save 
 from Yumeko.decorator.errors import error 
 from Yumeko.modules.antiflood import cleanup_flood_tracker
+scheduler.add_job(cleanup_flood_tracker, 'interval', minutes=5, id='antiflood_cleanup')
 import shutil
 import random
 MODULES = ["modules", "watchers", "admin", "decorator"]
