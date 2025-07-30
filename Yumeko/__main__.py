@@ -12,6 +12,7 @@ from Yumeko.database import init_db
 from asyncio import sleep
 from Yumeko.decorator.save import save 
 from Yumeko.decorator.errors import error 
+from Yumeko.modules.antiflood import cleanup_flood_tracker
 import shutil
 import random
 MODULES = ["modules", "watchers", "admin", "decorator"]
