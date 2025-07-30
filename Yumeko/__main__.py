@@ -228,7 +228,7 @@ async def show_help_menu(client, query: CallbackQuery):
              f"**🧩 ᴛᴀᴘ ᴏɴ ᴀɴʏ ᴍᴏᴅᴜʟᴇ ʙᴇʟᴏᴡ ᴛᴏ ᴠɪᴇᴡ ɪᴛs ғᴜʟʟ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀɴᴅ ᴜsᴀɢᴇ.**\n\n"
              f"🔧 sᴜᴘᴘᴏʀᴛᴇᴅ ᴘʀᴇғɪxᴇs:** {prefixes} \n\n"
              f"[📩]({config.HELP_IMG_URL}) **𝖥𝗈𝗎𝗇𝖽 𝖺 𝖻𝗎𝗀?**\n"
-             f"📬 ᴜsᴇ ᴛʜᴇ /bug ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʀᴇᴘᴏʀᴛ ɪᴛ ᴀɴᴅ ɪ’ʟʟ ғɪx ɪᴛ ᴀs sᴏᴏɴ ᴀs ᴘᴏssɪʙʟᴇ!",,
+             f"📬 ᴜsᴇ ᴛʜᴇ /bug ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʀᴇᴘᴏʀᴛ ɪᴛ ᴀɴᴅ ɪ’ʟʟ ғɪx ɪᴛ ᴀs sᴏᴏɴ ᴀs ᴘᴏssɪʙʟᴇ!",
         reply_markup=get_paginated_buttons(),
         invert_media=True
     )
