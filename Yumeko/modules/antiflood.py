@@ -304,6 +304,12 @@ ptb.add_handler(antiflood, group=ANTI_FLOOD_GROUP)
 
 __module__ = "𝖠𝗇𝗍𝗂𝖥𝗅𝗈𝗈𝖽"
 
+async def cleanup_flood_tracker():
+    global FLOOD
+    FLOOD.clear()
+    print("✅ [Antiflood] FLOOD dict cleared.")
+
+
 
 __help__ = """**𝖠𝖽𝗆𝗂𝗇𝗌 𝗈𝗇𝗅𝗒:**
   ✧ `/𝖿𝗅𝗈𝗈𝖽` **:** 𝖣𝗂𝗌𝗉𝗅𝖺𝗒 𝖼𝗎𝗋𝗋𝖾𝗇𝗍 𝖺𝗇𝗍𝗂-𝖿𝗅𝗈𝗈𝖽 𝗌𝖾𝗍𝗍𝗂𝗇𝗀𝗌.
